@@ -1,8 +1,9 @@
-require 'sinatra'
+# encoding: utf-8
 require 'json'
 
-get '/food' do
+def first
     food = File.open("food.json").read
-    JSON.parse(food).shuffle![0].to_json
+    JSON.parse(food).shuffle![0]["name"]
 end
 
+puts "今天去吃#{first}吧?"

@@ -2,8 +2,7 @@
 require 'json'
 
 def first
-    food = File.open("food.json").read
-    JSON.parse(food).shuffle![0]["name"]
+    JSON.parse(File.open("food.json").read).shuffle[0]["name"]
 end
 
 puts "今天去吃#{first}吧?"

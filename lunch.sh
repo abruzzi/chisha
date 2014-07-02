@@ -1,6 +1,4 @@
 #!/bin/bash
 
-cd /Users/jtqiu/develop/ruby/chisha
-chisha=`ruby app.rb`
+chisha=`ruby $HOME/develop/ruby/chisha/lunch.rb`
 osascript -e "display notification \"${chisha}\" with title \"Chisha?\""
-# say -v Ya-Ling $chisha 

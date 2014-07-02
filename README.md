@@ -12,7 +12,7 @@ Chisha是一个非常简单的命令行工具，它会从一个文件中读取�
 $./lunch.sh
 ```
 
-[提示](https://github.com/abruzzi/chisha/blob/master/fanji.png)
+![提示](https://github.com/abruzzi/chisha/blob/master/fanji.png)
 
 你还可以将这个命令放到`crontab`中，以便每天定期提醒你。
 
